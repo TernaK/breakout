@@ -7,6 +7,10 @@
 //
 
 #include <iostream>
+#include <SOIL/SOIL.h>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
 
 int main(int argc, const char * argv[]) {
   // insert code here...
