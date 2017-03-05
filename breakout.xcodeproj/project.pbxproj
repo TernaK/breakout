@@ -7,24 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5189749E1E6A24D400AE5290 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5189749D1E6A24D400AE5290 /* main.cpp */; };
+		513D61731E6A696100576470 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 513D61711E6A696100576470 /* Game.cpp */; };
+		513D61761E6A6BAB00576470 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 513D61741E6A6BAB00576470 /* Shader.cpp */; };
+		513D61791E6A734B00576470 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 513D61771E6A734B00576470 /* Texture.cpp */; };
+		513D617C1E6A757600576470 /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 513D617A1E6A757600576470 /* ResourceManager.cpp */; };
+		513D617E1E6A7F9800576470 /* resources in CopyFiles */ = {isa = PBXBuildFile; fileRef = 513D617D1E6A7F9200576470 /* resources */; };
+		513D61811E6B8E2600576470 /* SpriteRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 513D617F1E6B8E2600576470 /* SpriteRenderer.cpp */; };
+		5189749E1E6A24D400AE5290 /* breakout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5189749D1E6A24D400AE5290 /* breakout.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		518974981E6A24D400AE5290 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
 			files = (
+				513D617E1E6A7F9800576470 /* resources in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		513D61711E6A696100576470 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		513D61721E6A696100576470 /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		513D61741E6A6BAB00576470 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		513D61751E6A6BAB00576470 /* Shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
+		513D61771E6A734B00576470 /* Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
+		513D61781E6A734B00576470 /* Texture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Texture.hpp; sourceTree = "<group>"; };
+		513D617A1E6A757600576470 /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
+		513D617B1E6A757600576470 /* ResourceManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResourceManager.hpp; sourceTree = "<group>"; };
+		513D617D1E6A7F9200576470 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = resources; path = breakout/resources; sourceTree = "<group>"; };
+		513D617F1E6B8E2600576470 /* SpriteRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteRenderer.cpp; sourceTree = "<group>"; };
+		513D61801E6B8E2600576470 /* SpriteRenderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SpriteRenderer.hpp; sourceTree = "<group>"; };
 		5189749A1E6A24D400AE5290 /* breakout */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = breakout; sourceTree = BUILT_PRODUCTS_DIR; };
-		5189749D1E6A24D400AE5290 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5189749D1E6A24D400AE5290 /* breakout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = breakout.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +59,7 @@
 		518974911E6A24D400AE5290 = {
 			isa = PBXGroup;
 			children = (
+				513D617D1E6A7F9200576470 /* resources */,
 				5189749C1E6A24D400AE5290 /* breakout */,
 				5189749B1E6A24D400AE5290 /* Products */,
 			);
@@ -57,7 +76,17 @@
 		5189749C1E6A24D400AE5290 /* breakout */ = {
 			isa = PBXGroup;
 			children = (
-				5189749D1E6A24D400AE5290 /* main.cpp */,
+				5189749D1E6A24D400AE5290 /* breakout.cpp */,
+				513D61711E6A696100576470 /* Game.cpp */,
+				513D61721E6A696100576470 /* Game.hpp */,
+				513D61741E6A6BAB00576470 /* Shader.cpp */,
+				513D61751E6A6BAB00576470 /* Shader.hpp */,
+				513D61771E6A734B00576470 /* Texture.cpp */,
+				513D61781E6A734B00576470 /* Texture.hpp */,
+				513D617A1E6A757600576470 /* ResourceManager.cpp */,
+				513D617B1E6A757600576470 /* ResourceManager.hpp */,
+				513D617F1E6B8E2600576470 /* SpriteRenderer.cpp */,
+				513D61801E6B8E2600576470 /* SpriteRenderer.hpp */,
 			);
 			path = breakout;
 			sourceTree = "<group>";
@@ -119,7 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5189749E1E6A24D400AE5290 /* main.cpp in Sources */,
+				513D617C1E6A757600576470 /* ResourceManager.cpp in Sources */,
+				5189749E1E6A24D400AE5290 /* breakout.cpp in Sources */,
+				513D61791E6A734B00576470 /* Texture.cpp in Sources */,
+				513D61811E6B8E2600576470 /* SpriteRenderer.cpp in Sources */,
+				513D61761E6A6BAB00576470 /* Shader.cpp in Sources */,
+				513D61731E6A696100576470 /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +259,8 @@
 					"-lSOIL",
 					"-lGLFW",
 					"-lGLEW",
+					"-framework",
+					CoreFoundation,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -242,6 +278,8 @@
 					"-lSOIL",
 					"-lGLFW",
 					"-lGLEW",
+					"-framework",
+					CoreFoundation,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
