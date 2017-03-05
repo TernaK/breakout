@@ -15,6 +15,8 @@
 		513D61811E6B8E2600576470 /* SpriteRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 513D617F1E6B8E2600576470 /* SpriteRenderer.cpp */; };
 		513D61841E6B9FB700576470 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 513D61821E6B9FB700576470 /* GameObject.cpp */; };
 		513D61871E6BA18900576470 /* GameLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 513D61851E6BA18900576470 /* GameLevel.cpp */; };
+		513D618A1E6C76F400576470 /* BallObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 513D61881E6C76F400576470 /* BallObject.cpp */; };
+		513D618D1E6C8C7400576470 /* ParticleGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 513D618B1E6C8C7400576470 /* ParticleGenerator.cpp */; };
 		5189749E1E6A24D400AE5290 /* breakout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5189749D1E6A24D400AE5290 /* breakout.cpp */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,10 @@
 		513D61831E6B9FB700576470 /* GameObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameObject.hpp; sourceTree = "<group>"; };
 		513D61851E6BA18900576470 /* GameLevel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameLevel.cpp; sourceTree = "<group>"; };
 		513D61861E6BA18900576470 /* GameLevel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameLevel.hpp; sourceTree = "<group>"; };
+		513D61881E6C76F400576470 /* BallObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BallObject.cpp; sourceTree = "<group>"; };
+		513D61891E6C76F400576470 /* BallObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BallObject.hpp; sourceTree = "<group>"; };
+		513D618B1E6C8C7400576470 /* ParticleGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleGenerator.cpp; sourceTree = "<group>"; };
+		513D618C1E6C8C7400576470 /* ParticleGenerator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ParticleGenerator.hpp; sourceTree = "<group>"; };
 		5189749A1E6A24D400AE5290 /* breakout */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = breakout; sourceTree = BUILT_PRODUCTS_DIR; };
 		5189749D1E6A24D400AE5290 /* breakout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = breakout.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +103,10 @@
 				513D61831E6B9FB700576470 /* GameObject.hpp */,
 				513D61851E6BA18900576470 /* GameLevel.cpp */,
 				513D61861E6BA18900576470 /* GameLevel.hpp */,
+				513D61881E6C76F400576470 /* BallObject.cpp */,
+				513D61891E6C76F400576470 /* BallObject.hpp */,
+				513D618B1E6C8C7400576470 /* ParticleGenerator.cpp */,
+				513D618C1E6C8C7400576470 /* ParticleGenerator.hpp */,
 			);
 			path = breakout;
 			sourceTree = "<group>";
@@ -159,9 +169,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				513D61871E6BA18900576470 /* GameLevel.cpp in Sources */,
+				513D618D1E6C8C7400576470 /* ParticleGenerator.cpp in Sources */,
 				513D617C1E6A757600576470 /* ResourceManager.cpp in Sources */,
 				5189749E1E6A24D400AE5290 /* breakout.cpp in Sources */,
 				513D61791E6A734B00576470 /* Texture.cpp in Sources */,
+				513D618A1E6C76F400576470 /* BallObject.cpp in Sources */,
 				513D61811E6B8E2600576470 /* SpriteRenderer.cpp in Sources */,
 				513D61761E6A6BAB00576470 /* Shader.cpp in Sources */,
 				513D61731E6A696100576470 /* Game.cpp in Sources */,

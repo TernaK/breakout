@@ -14,11 +14,25 @@
 #include "ResourceManager.hpp"
 #include "SpriteRenderer.hpp"
 #include "GameLevel.hpp"
+#include "BallObject.hpp"
+#include "ParticleGenerator.hpp"
 #include <GLFW/glfw3.h>
 
 enum GameState {
-  GAME_ACTIVE, GAME_MENU, GAME_END
+  GAME_ACTIVE,
+  GAME_MENU,
+  GAME_END
 };
+
+enum Direction {
+  UP,
+  RIGHT,
+  DOWN,
+  LEFT
+};
+
+// Defines a Collision typedef that represents collision data
+typedef std::tuple<GLboolean, Direction, glm::vec2> Collision;
 
 class Game
 {
@@ -33,6 +47,9 @@ public:
   void processInput(GLfloat dt);
   void update(GLfloat dt);
   
+  void resetLevel();
+  void resetPlayer();
+  
   /* members */
   
   GameState  state;
@@ -41,6 +58,12 @@ public:
   
   std::vector<GameLevel> levels;
   GLuint                 level;
+  
+private:
+  GLboolean checkCollision(GameObject &one, GameObject &two);
+  Collision checkCollision(BallObject &one, GameObject &two);
+  Direction vectorDirection(glm::vec2 target);
+  void doCollisions();
 };
 
 #endif /* Game_hpp */
