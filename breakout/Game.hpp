@@ -14,6 +14,7 @@
 #include "ResourceManager.hpp"
 #include "SpriteRenderer.hpp"
 #include "GameLevel.hpp"
+#include <GLFW/glfw3.h>
 
 enum GameState {
   GAME_ACTIVE, GAME_MENU, GAME_END
