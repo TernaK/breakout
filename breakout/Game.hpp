@@ -13,6 +13,7 @@
 #include <GL/glew.h>
 #include "ResourceManager.hpp"
 #include "SpriteRenderer.hpp"
+#include "GameLevel.hpp"
 
 enum GameState {
   GAME_ACTIVE, GAME_MENU, GAME_END
@@ -36,6 +37,9 @@ public:
   GameState  state;
   GLboolean  keys[1024];
   GLuint	   width, height;
+  
+  std::vector<GameLevel> levels;
+  GLuint                 level;
 };
 
 #endif /* Game_hpp */

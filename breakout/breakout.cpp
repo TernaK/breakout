@@ -49,7 +49,6 @@ int main(int argc, char *argv[])
   
   int windowWidth, windowHeight;
   glfwGetFramebufferSize(window, &windowWidth, &windowHeight);
-  glm::mat4 projection = glm::ortho(0.0f, GLfloat(windowWidth), GLfloat(windowHeight), 0.0f, -1.0f, 1.0f);
   
   // OpenGL configuration
   glViewport(0, 0, windowWidth, windowHeight);
