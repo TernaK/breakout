@@ -57,7 +57,8 @@ void Game::init()
                                     static_cast<GLfloat>(this->height),
                                     0.0f, -1.0f, 1.0f);
   ResourceManager::getShader("sprite").use().setInteger("image", 0);
-  ResourceManager::getShader("sprite").setMatrix4("projection", projection);
+  ResourceManager::getShader("sprite").use().setMatrix4("projection", projection);
+  ResourceManager::getShader("particle").use().setMatrix4("projection", projection);
   
   // Load textures
   ResourceManager::loadTexture("resources/textures/background.jpg", GL_FALSE, "background");
@@ -110,7 +111,7 @@ void Game::render()
     Player->draw(*GameRenderer);
     
     //draw particles
-    Particles->draw();
+    Particles->Draw();
     
     //draw ball
     Ball->draw(*GameRenderer);
@@ -154,7 +155,7 @@ void Game::update(GLfloat dt)
   // Check for collisions
   this->doCollisions();
   
-  Particles->update(dt, *Ball, 2, glm::vec2(Ball->radius / 2));
+  Particles->Update(dt, *Ball, 2, glm::vec2(Ball->radius / 2));
   
   // Check loss condition
   if (Ball->position.y >= this->height) // Did ball reach bottom edge?

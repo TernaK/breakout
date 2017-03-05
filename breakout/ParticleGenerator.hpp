@@ -13,14 +13,13 @@
 #include "GameObject.hpp"
 #include "Texture.hpp"
 
-
 // Represents a single particle and its state
 struct Particle {
-  glm::vec2 position, velocity;
-  glm::vec4 color;
-  GLfloat life;
+  glm::vec2 Position, Velocity;
+  glm::vec4 Color;
+  GLfloat Life;
   
-  Particle() : position(0.0f), velocity(0.0f), color(1.0f), life(0.0f) { }
+  Particle() : Position(0.0f), Velocity(0.0f), Color(1.0f), Life(0.0f) { }
 };
 
 
@@ -33,12 +32,11 @@ public:
   // Constructor
   ParticleGenerator(Shader shader, Texture2D texture, GLuint amount);
   // Update all particles
-  void update(GLfloat dt, GameObject &object, GLuint newParticles, glm::vec2 offset = glm::vec2(0.0f, 0.0f));
+  void Update(GLfloat dt, GameObject &object, GLuint newParticles, glm::vec2 offset = glm::vec2(0.0f, 0.0f));
   // Render all particles
-  void draw();
-  
+  void Draw();
 private:
-  // Sstate
+  // State
   std::vector<Particle> particles;
   GLuint amount;
   // Render state
